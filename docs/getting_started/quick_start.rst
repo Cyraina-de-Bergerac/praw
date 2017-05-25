@@ -190,6 +190,7 @@ submissions based on the ``hot`` sort for a given subreddit try:
    # assume you have a Subreddit instance bound to variable `subreddit`
    for submission in subreddit.hot(limit=10):
        print(submission.title)  # Output: the submission's title
+       print(submission.selftext) #Output: the submission's description
        print(submission.score)  # Output: the submission's score
        print(submission.id)     # Output: the submission's ID
        print(submission.url)    # Output: the URL the submission points to
